@@ -1,0 +1,78 @@
+[
+    {
+        "id":"001",
+        "name":"Potus",
+        "desc":"lorem impsum",
+        "price":"6€",
+        "img":"./Images/Potus.jpg",
+        "category":"int"
+
+    },
+    {
+        "id":"002",
+        "name":"Orquidea",
+        "desc":"lorem impsum",
+        "price":"15€",
+        "img":"./Images/Orquidea.jpg",
+        "category":"int"
+
+    },
+    {
+        "id":"003",
+        "name":"Helecho",
+        "desc":"lorem impsum",
+        "price":"7€",
+        "img":"./Images/Helecho.jpg",
+        "category":"int"
+
+    },
+    {
+        "id":"004",
+        "name":"Cactus",
+        "desc":"lorem impsum",
+        "price":"3€",
+        "img":"./Images/Cactus.jpg",
+        "category":"ext"
+
+    },
+    {
+        "id":"005",
+        "name":"Lazo de amor",
+        "desc":"lorem impsum",
+        "price":"5€",
+        "img":"./Images/LazoDeAmor.jpg",
+        "category":"int"
+
+
+    },
+    {
+        "id":"006",
+        "name":"Alegria Del Hogar",
+        "desc":"lorem impsum",
+        "price":"8€",
+        "img":"./Images/AlegriaDelHogar.jpg",
+        "category":"ext"
+
+
+    },
+    {
+        "id":"007",
+        "name":"Begonia",
+        "desc":"lorem impsum",
+        "price":"4€",
+        "img":"./Images/Begonia.jpg",
+        "category":"ext"
+
+
+    },
+    {
+        "id":"008",
+        "name":"Pilea",
+        "desc":"lorem impsum",
+        "price":"5€",
+        "img":"./Images/Pilea.jpg",
+        "category":"int"
+
+
+    }
+]
