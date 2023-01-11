@@ -1,5 +1,7 @@
 import plants from "../components/mockData";
 
+import {getFirestore, doc, getDoc} from "firebase/firestore";
+
 
 export default function getItems() {
 	return new Promise((resolve) => {

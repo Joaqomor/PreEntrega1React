@@ -5,6 +5,8 @@ import ItemContainer from './components/ItemContainer';
 import Footer from './components/Footer'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import AboutUs from "./components/AboutUs";
+import CartProvider from "./context/CartContext";
+import Cart from "./components/Cart";
 
 
 function App() {
@@ -12,15 +14,18 @@ function App() {
     <div>
 
       <BrowserRouter>
+        <CartProvider>      
         <NavBar/>
           <Routes>
             <Route path={"/"} element={<ItemContainer/>} />
             <Route path={"/home"} element={<ItemContainer/>} />
+            <Route path={"/cart"} element={<Cart/>} />
             <Route path={"/Detail/:itemID"} element={<ItemDetailContainer/>} />
             <Route path={"/category/:categoryId"} element={<ItemContainer/>} />
             <Route path={"/aboutUs"} element={<AboutUs/>} />
           </Routes>
         <Footer/>
+        </CartProvider>
       </BrowserRouter>
       
     </div>

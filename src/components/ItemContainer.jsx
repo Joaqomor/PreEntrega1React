@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
 import {List} from "./ItemList"
 import { useParams } from "react-router-dom"
-import getItems, {getItemsCategory} from "../service/serviceData"
+/* import {getItemsCategory} from "../service/serviceData" */
+import { getItems,getItemsCategory } from "../firebase/config"
 
 
 
@@ -9,7 +10,7 @@ export default function ItemContainer () {
     const [content,setContent] = useState([])
     const {categoryId} =useParams();
 
-    console.log (categoryId)
+    console.log (categoryId) 
 
     useEffect(() => {
       if (categoryId === undefined) {
@@ -25,6 +26,8 @@ export default function ItemContainer () {
           .catch((errorMsg) => console.error("ItemListContainer Category error:",errorMsg));
       }
     }, [categoryId]);
+
+    console.log (content)
   
   
 
