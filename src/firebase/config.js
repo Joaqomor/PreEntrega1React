@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { collection, getDocs, getFirestore, doc, getDoc, query, where,  } from "firebase/firestore";
+import { collection, getDocs, getFirestore, doc, getDoc, query, where, addDoc  } from "firebase/firestore";
+import { Await } from "react-router-dom";
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -67,4 +68,14 @@ export async function getItemsCategory(categoryID) {
 	});
 
 	return plantsDocs;
+}
+
+
+export async function sendPurchaseOrder(order) {
+	const ordersCollection = collection (db, 'orders');
+	let newPurchaseOrder = await addDoc (ordersCollection, order)
+
+	return newPurchaseOrder.id;
+   
+	
 }

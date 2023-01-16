@@ -5,8 +5,7 @@ import { getSingleItem } from "../firebase/config";
 
 export default function ItemDetailContainer() {
 	const [content, setContent] = useState([]);
-    console.log(content)
-	
+    
 
 	let { itemID } = useParams();
 

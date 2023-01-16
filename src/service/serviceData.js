@@ -18,7 +18,9 @@ export function getItemsCategory(categoryID) {
 		});
 
 		if (itemsFound.length >0){
+			setTimeout(() => {
 			resolve(itemsFound);
+		}, 2000);
 		} else {
 			reject("NO PRODUCTS")
 		}
@@ -37,6 +39,6 @@ export function getSingleItem(itemID) {
 			} else {
 				reject("NO ITEM");
 			}
-		}, 500);
+		}, 1000);
 	});
 }
