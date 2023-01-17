@@ -13,13 +13,13 @@ Desde el carrito finalmente el usuario debe rellenar un formulario de compra y h
 
 ### videos para ver la funcionabilidad de la app:
 
-![Reac app (1)](./public/images/usonavbar.gif)
+![Reac app (1)](./public/Images/UsoNavBar.gif)
 - En el video se aprecia la navegación permitida gracias a react-router-dom
 
-![Reac app (2)](./public/images/usoitemdetail.gif)
+![Reac app (2)](./public/Images/UsoItemDetail.gif)
 - En el video se aprecia como por medio de un contador el usuario selecciona la cantidad de plantas que quiere y lo agrega al carrito.
 
-![Reac app (3)](./public/images/detallecompra.gif)
+![Reac app (3)](./public/Images/DetalleCompra.gif)
 - En el video se aprecia al usuario completando el formulario y generando una nueva orden de compra la cual se le indica su numero en un checkout. 
 
 
