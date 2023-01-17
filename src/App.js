@@ -19,8 +19,6 @@ function App() {
         <CartProvider>
           <NavBar/>
             <RoutesWithNotFound path="*"> 
-              <Routes>
-
                 <Route path={"/"} element={<ItemListContainer/>} />
                 <Route path={"/home"} element={<ItemListContainer/>} />
                 <Route path={"/cart"} element={<Cart/>} />
@@ -28,7 +26,6 @@ function App() {
                 <Route path={"/category/:categoryId"} element={<ItemListContainer/>} />
                 <Route path={"/aboutUs"} element={<AboutUs/>} />
                 <Route path={"/CheckOut/:orderId"} element={<CheckOut/>} />
-              </Routes>
             </RoutesWithNotFound>
           <Footer/>
         </CartProvider>
