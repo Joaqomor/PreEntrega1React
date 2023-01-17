@@ -15,7 +15,8 @@ export default function ItemDetailContainer() {
 				setContent(respuesta);
 			})
 			.catch((error) =>
-				console.error(error)
+				console.warn("Item not Found",error),
+				
 			);
 	}, [itemID]);
 

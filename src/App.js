@@ -8,6 +8,7 @@ import AboutUs from "./components/AboutUs";
 import CartProvider from "./context/CartContext";
 import Cart from "./components/Cart";
 import CheckOut from "./components/CheckOut";
+import RoutesWithNotFound from "./components/RoutesWithNotFound";
 
 
 function App() {
@@ -15,18 +16,21 @@ function App() {
     <div>
 
       <BrowserRouter>
-        <CartProvider>      
-        <NavBar/>
-          <Routes>
-            <Route path={"/"} element={<ItemListContainer/>} />
-            <Route path={"/home"} element={<ItemListContainer/>} />
-            <Route path={"/cart"} element={<Cart/>} />
-            <Route path={"/Detail/:itemID"} element={<ItemDetailContainer/>} />
-            <Route path={"/category/:categoryId"} element={<ItemListContainer/>} />
-            <Route path={"/aboutUs"} element={<AboutUs/>} />
-            <Route path={"/CheckOut/:orderId"} element={<CheckOut/>} />
-          </Routes>
-        <Footer/>
+        <CartProvider>
+          <NavBar/>
+            <RoutesWithNotFound path="*"> 
+              <Routes>
+
+                <Route path={"/"} element={<ItemListContainer/>} />
+                <Route path={"/home"} element={<ItemListContainer/>} />
+                <Route path={"/cart"} element={<Cart/>} />
+                <Route path={"/Detail/:itemID"} element={<ItemDetailContainer/>} />
+                <Route path={"/category/:categoryId"} element={<ItemListContainer/>} />
+                <Route path={"/aboutUs"} element={<AboutUs/>} />
+                <Route path={"/CheckOut/:orderId"} element={<CheckOut/>} />
+              </Routes>
+            </RoutesWithNotFound>
+          <Footer/>
         </CartProvider>
       </BrowserRouter>
       

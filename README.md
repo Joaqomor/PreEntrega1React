@@ -1,10 +1,32 @@
-# Getting Started with Create React App
+# E-commerce de Planta tu hogar!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Resumen: 
+>Es un simple e-commerce en donde se prensentan de manera inicial 10 plantas, tanto en la ruta del home como la del logo de la empresa, las cuales estan almacenadas en firebase y traidas y reenderizadas.
+ Mediante la barra de navegación, se puede acceder a las dos categorias de plantas que dispone el e-commerce y a una pagina sobre la empresa. 
+Tanto desde los filtros de categoria como desde la home,se puede acceder al detalle de cada planta individual, desde donde el usuario podrá variar la cantidad mediante un contador y agregar dicha planta a su carrito de compras, al cual se puede acceder en todo momento.
+Desde el carrito finalmente el usuario debe rellenar un formulario de compra y hacer click para finalizar la compra y obtener asi un numero de su orden de compra, dicha orden de compra, también es almacenada en firebase junto con todos los datos del comprador ingresados previamente en el formulario. 
 
-## Available Scripts
+### Realización:
 
-In the project directory, you can run:
+>El ecommerce tiene sus bases en HTML, CSS, Javascript y React js para la creación de una aplicación react. A demas, tiene la implementación de Bootstrap para dar estilo a la página. Para la base de datos de los item del ecommerce se utilizó la interacción con Firebase.
+
+### videos para ver la funcionabilidad de la app:
+
+![Reac app (1)](./public/images/UsoNavBar.gif)
+- En el video se aprecia la navegación permitida gracias a react-router-dom
+
+![Reac app (2)](./public/images/UsoItemDetail.gif)
+- En el video se aprecia como por medio de un contador el usuario selecciona la cantidad de plantas que quiere y lo agrega al carrito.
+
+![Reac app (3)](./public/images/DetalleCompra.gif)
+- En el video se aprecia al usuario completando el formulario y generando una nueva orden de compra la cual se le indica su numero en un checkout. 
+
+
+
+##### Este es un proyecto pensado, diseñado y programado por Planta tu hogar para el curso de React js de Coderhouse.
+
+
+
 
 ### `npm start`
 

@@ -49,11 +49,29 @@ function onSubmit(evt) {
     if (buyerData.email !== buyerData.email2) {
         return setFormError("Your emails are diferent");
     }
+    if (!buyerData.name) {
+        return setFormError("Please enter your first name. ");
+    }
+    if (!buyerData.phone) {
+        return setFormError("Please enter your phone number. ");
+    }
+    if (!buyerData.email) {
+        return setFormError("Please enter your email. ");
+    }
+    if (!buyerData.email2) {
+        return setFormError("Please repeat your email. ");
+    }
+    if (!buyerData.lastName) {
+        return setFormError("Please enter your last name. ");
+    }
+    if (!buyerData.adress) {
+        return setFormError("Please enter your adress. ");
+    }
 
     handlePurchaseOrder(buyerData);
     
 
-    setBuyerData({ name: "", email: "", phone: "", adress:"", lastName:""});
+    setBuyerData({ name: "", email: "", phone: "", adress:"", lastName:"", email2:""});
     setFormError("");
 }
     
@@ -106,7 +124,7 @@ function onSubmit(evt) {
                     <button onClick={onSubmit} className='m-2 btn btn-primary fs-3'>Buy Now</button>
                     {formError && (
 					<div>
-						<span className="formErrorMessage">{formError}</span>
+						<span className="text-danger fs-4 m-4">{formError}</span>
 					</div>
 				)}
                 </form>
